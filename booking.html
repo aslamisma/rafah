@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOOK WITH US</title>
+</head>
+<body>
+    <header>
+        <h1>book a service</h1>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="rafah services logo">
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES OFFERED</a>
+            <a href="booking.html">BOOKING ONLINE</a>
+            <a href="about.html">ABOUT US</a>
+        </nav>
+    </header>
+    <main>
+        <style>
+            main{
+                background-image: url(images/booking\ page\ .jpg);
+                background-size: cover;
+            }
+        </style>
+    <section class="book-now">
+        <h2>book your service</h2>
+        <form id="bookingform">
+        <ul>
+            <li>
+                <label for="name">FIRST NAME</label>
+                <input type="text" id="name" required>
+            </li>
+            <li>
+                <label for="name">LAST NAME</label>
+                <input type="text" id="name" required>
+            </li>
+            <li>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email"required>
+            </li>
+            <li>
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+            </li>
+            <li>
+                <label for="street">Street:</label>
+                <input type="text" id="street" required>
+                <button type="button" id="autofillButton">Auto-Fill Address</button>
+            </li>
+            <li>
+                <label for="zipcode">Zip Code:</label>
+                <input type="text" id="zipcode" required>
+            </li>
+            <li>
+                <label for="service">SELECT SERVICES</label>
+                <select id="service" required>
+                    <option value="service1">Home upgrades & Remodeling</option>
+                    <option value="service2">HVAC care and maintenance</option>
+                    <option value="service1">Plumbing installation & Repair</option>
+                    <option value="service2">Electrical installation and Repair</option>
+                </select>
+            </li>
+        </ul>
+        <button type="submit" class="cta-button">BOOK NOW</button>
+        </form>
+        <p>After booking, you will receive a confirmation email.</p>    
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <div class="contact-info">
+            <ul>
+                <li><strong>Company Contact:</strong> <a href="tel:+18572870288">+18572870288</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890">+18572870288</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
+                <li><strong>Facebook:</strong> <a href="https://facebook.com/yourpage">facebook.com/yourpage</a></li>
+                <li><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle">@yourhandle</a></li>
+            </ul>
+        </div>
+    </section>
+        <section class="review-section">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Terrible</option>
+                </select>
+
+                <label for="review">Review:</label>
+                <textarea id="review" required></textarea>
+
+                <button type="submit" class="cta-button">Submit Review</button>
+            </form>
+            <div id="responseMessage" class="hidden"></div>
+
+            <h3>All Reviews</h3>
+            <div id="reviewsList"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&COPY; RAFAH MAINTENANCE SOLUTIONS</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

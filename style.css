@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    background-image: url(images/nav.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hoover {
+    text-decoration: underline;
+}
+.logo img{
+    width: 150px;
+    border-radius: 75px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+}
+
+.hero {
+    background-image: url(images/book.jpg);
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.cta-button {
+    background-color: #35424a;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: x-large;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #455a64;
+}
+
+.introduction, .featured-services, .testimonials, .about-preview, .promotions, .contact-info {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service {
+    margin: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #35424a;
+}
+
+.service {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #455a64;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 2.5em; 
+    font-family: 'Georgia', serif; 
+    text-align: center; 
+    color: #35424a; 
+    text-transform: uppercase; 
+    margin: 20px 0; 
+}
+h2 {
+    font-size: 2em; 
+    font-family: 'Arial', sans-serif; 
+    text-align: left; 
+    color: #2c3e50; 
+    text-transform: capitalize; 
+    margin: 15px 0; 
+}
+h3 {
+    font-size: 1.5em; 
+    font-family: 'Arial', sans-serif; 
+    text-align: left; 
+    color: #34495e; 
+    text-transform: capitalize; 
+    margin: 10px 0; 
+}
+p {
+    font-size: 1em; 
+    font-family: 'Arial', sans-serif; 
+    text-align: justify; 
+    color: #555; 
+    margin: 10px 0; 
+}
+
+.review-section {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.review-section h2 {
+    color: #35424a;
+}
+
+.review-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.review-section input, 
+.review-section select,
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.review-section .cta-button {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.review-section .cta-button:hover {
+    background-color: #455a64;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    padding: 10px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+#reviewsList {
+    margin-top: 20px;
+}
+
+.review-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review-item h4 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.review-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.booking-section {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.booking-section h2 {
+    color: #35424a;
+}
+.contact-info ul li{
+    padding: 0; 
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.book-now ul li{ 
+    padding: 0; 
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.book-now label {
+    display: block; 
+    margin: 5px 0; 
+}
+
+.book-now input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.book-now .cta-button {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-now .cta-button:hover {
+    background-color: #455a64;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    padding: 10px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
